@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchBar.css';
 
 class SearchBar extends React.Component {
 
@@ -8,7 +9,7 @@ render() {
         <div className="searchBarComponentLeft">
           <img
             alt="instagramPhoto"
-            src="hhttp://www.vectorico.com/download/social_media/Instagram-Logo.png"
+            src="http://www.vectorico.com/download/social_media/Instagram-Logo.png"
           />
           <h1>InstaCloneGram</h1>
         </div>
