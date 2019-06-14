@@ -1,5 +1,12 @@
 import React from 'react';
 import './searchBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCompass, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGratipay } from '@fortawesome/free-brands-svg-icons'
+
+const compassElement = <FontAwesomeIcon size="2x" icon={faCompass} />
+const gratiElement = <FontAwesomeIcon size="2x" icon={faGratipay} type="i" />
+const userElement = <FontAwesomeIcon size="2x" icon={faUser} />
 
 class SearchBar extends React.Component {
 
@@ -21,9 +28,11 @@ render() {
         />
 
         <div className="searchBarComponentRight">
-          <i className="far fa-compass fa-2x" />
-          <i className="fab fa-gratipay  fa-2x" />
+        {compassElement}
+          <i className="fab fa-gratipay  fa-2x"/>
+          {gratiElement}
           <i className="far fa-user  fa-2x" />
+          {userElement}
         </div>
       </div>
     );
