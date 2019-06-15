@@ -1,12 +1,13 @@
 import React from 'react';
 import './searchBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCompass, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCompass, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faGratipay } from '@fortawesome/free-brands-svg-icons'
 
-const compassElement = <FontAwesomeIcon size="2x" icon={faCompass} />
-const gratiElement = <FontAwesomeIcon size="2x" icon={faGratipay} type="i" />
-const userElement = <FontAwesomeIcon size="2x" icon={faUser} />
+const compassElement = <FontAwesomeIcon size="2x" icon={faCompass} type="i"/>;
+const gratiElement = <FontAwesomeIcon size="2x" icon={faGratipay} type="i" />;
+const userElement = <FontAwesomeIcon size="2x" icon={faUser} type="i" />;
+const searchElement = <FontAwesomeIcon size="2x" icon={faSearch} type="i" />
 
 class SearchBar extends React.Component {
 
@@ -21,6 +22,7 @@ render() {
           <h1>InstaCloneGram</h1>
         </div>
 
+ {searchElement}
         <input
           type="search"
           name="search"

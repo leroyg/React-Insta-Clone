@@ -8,14 +8,14 @@ import PostContainer from "./components/PostContainer/PostContainer";
 class App extends React.Component {
     state = {
   data: [],
+    
+}
 
   componentDidMount() {
     this.setState({
       data: dummyData
-    });
+    })
 }
-
-    }
   
 render() {
     return (
