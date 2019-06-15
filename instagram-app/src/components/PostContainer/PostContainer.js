@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../dummy-data.js';
+import data from '/home/leroy/Documents/LambdaSchoolWork/22_React-Insta_Clone/instagram-app/src/dummy-data.js';
 
 class PostContainer extends React.Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class PostContainer extends React.Component {
 
 componentDidMount(){
     this.setState({
-        names: this.props.data
+        data: this.props.data
     }); 
 }
 
