@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '/home/leroy/Documents/LambdaSchoolWork/22_React-Insta_Clone/instagram-app/src/dummy-data.js';
+import dummyData from '../../dummy-data';
 
 class PostContainer extends React.Component {
     constructor(props) {
@@ -17,7 +17,7 @@ componentDidMount(){
 render() {
     return (
       <div>
-          {data.map(
+          {dummyData.map(
             (post, i) => {
                 return (
                     <div key={post.timestamp} className='postContainer'>
