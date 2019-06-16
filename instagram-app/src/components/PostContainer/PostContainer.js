@@ -1,6 +1,7 @@
 import React from 'react';
 import dummyData from '../../dummy-data';
-import Comments from '../CommentSection/CommentSection'
+import Comments from '../CommentSection/CommentSection';
+import PostInteractions from './PostInteractions';
 
 class PostContainer extends React.Component {
     constructor(props) {
@@ -21,16 +22,19 @@ render() {
           {dummyData.map(
             (post, i) => {
                 return (
-                    <div key={post.timestamp} className='postContainer'>
+                    <div key = {post.timestamp} className = 'postContainer'>
 
-                    <div className="post-header"> 
+                    <div className = "post-header"> 
                     <h2> 
-                        <img alt={post.id} src={post.thumbnailUrl}/>
+                        <img alt = {post.id} src = {post.thumbnailUrl}/>
                         {post.username}
                     </h2>
                     </div>
 
-                    <img className='post-img' alt={post.id} src={post.imageUrl}/>
+                    <img className = 'post-img' alt = {post.id} src ={ post.imageUrl}/>
+
+                    <PostInteractions key = {i} name = {post}/>
+
                     <Comments key={post.username} comments={post.comments} />
                     </div>
                 );
