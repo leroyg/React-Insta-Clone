@@ -1,5 +1,6 @@
 import React from 'react';
 import dummyData from '../../dummy-data';
+import Comments from '../CommentSection/CommentSection'
 
 class PostContainer extends React.Component {
     constructor(props) {
@@ -30,11 +31,10 @@ render() {
                     </div>
 
                     <img className='post-img' alt={post.id} src={post.imageUrl}/>
-
+                    <Comments key={post.username} comments={post.comments} />
                     </div>
-                )
-            }
-          )}
+                );
+            })}
       </div>
     );
   }
