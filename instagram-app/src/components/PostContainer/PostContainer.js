@@ -24,14 +24,16 @@ render() {
                 return (
                     <div key = {post.timestamp} className = 'postContainer'>
 
-                    <div className = "post-header"> 
+                    <div className = "post-header">
+                    <div className = "post-thumbnail-container"> 
+                    <img alt = {post.id} className="post-thumbnail-image" src = {post.thumbnailUrl}/>
+                    </div>
                     <h2> 
-                        <img alt = {post.id} src = {post.thumbnailUrl}/>
                         {post.username}
                     </h2>
                     </div>
 
-                    <img className = 'post-img' alt = {post.id} src ={ post.imageUrl}/>
+                    <img className = 'post-image' alt = {post.id} src ={ post.imageUrl}/>
 
                     <PostInteractions key = {i} name = {post}/>
 

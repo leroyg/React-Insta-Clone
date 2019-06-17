@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class AddComment extends Component {
     state = {
@@ -45,7 +46,7 @@ class AddComment extends Component {
               value={this.state.text}
               placeholder="Add a comment ..."
             />{" "}
-            <btn
+            <Button
               /// ternery flag for updateScreen
               className={this.state.updateScreen ? "btn blue" : "btn black"}
               //ternery eventListener change to active
@@ -53,7 +54,7 @@ class AddComment extends Component {
             >
               {" "}
               Send{" "}
-            </btn>{" "}
+            </Button>{" "}
           </form>
         );
       }

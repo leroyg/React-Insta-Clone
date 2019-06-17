@@ -1,6 +1,8 @@
 import React from 'react';
 import './font.css';
 import './App.css';
+import './components/PostContainer/postContainer.css'
+import './components/CommentSection/CommentSection.css';
 import dummyData from "./dummy-data";
 import SearchBar from "./components/SearchBar/SearchBar";
 import PostContainer from "./components/PostContainer/PostContainer";
