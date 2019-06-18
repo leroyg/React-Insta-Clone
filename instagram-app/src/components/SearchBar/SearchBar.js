@@ -7,11 +7,19 @@ import { faGratipay } from '@fortawesome/free-brands-svg-icons'
 const compassElement = <FontAwesomeIcon size="2x" icon={faCompass} type="i"/>;
 const gratiElement = <FontAwesomeIcon size="2x" icon={faGratipay} type="i" />;
 const userElement = <FontAwesomeIcon size="2x" icon={faUser} type="i" />;
-const searchElement = <FontAwesomeIcon size="2x" icon={faSearch} type="i" />
+// const searchElement = <FontAwesomeIcon size="2x" icon={faSearch} type="i" />
 
 class SearchBar extends React.Component {
 
-render() {
+    state = {
+		searchTerm: ""
+	};
+onFormSubmit=(event)=>{
+  event.preventDefault()
+  this.props.onSearch(this.state.searchTerm)
+}
+
+   render(){
     return (
       <div className="searchBarMain">
         <div className="searchBarComponentLeft">
@@ -22,12 +30,15 @@ render() {
           <h1>InstaCloneGram</h1>
         </div>
 
- {searchElement}
+        <form onSearch = {this.onSearch}>
         <input
           type="search"
           name="search"
-          placeholder="Search"
-        />
+          placeholder=' Search'
+          value={this.state.searchTerm} 
+          onChange={(event)=> this.setState({term:event.target.value}) }  />
+
+</form>
 
         <div className="searchBarComponentRight">
         {compassElement}

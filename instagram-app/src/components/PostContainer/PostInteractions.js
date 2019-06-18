@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faComment, faCommentsDollar } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faComment } from '@fortawesome/free-solid-svg-icons';
 
 const heartElement = <FontAwesomeIcon size="1x" icon={faHeart} type="i"/>;
 

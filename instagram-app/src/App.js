@@ -10,6 +10,8 @@ import PostContainer from "./components/PostContainer/PostContainer";
 class App extends React.Component {
     state = {
   data: [],
+
+  filteredSearch: []
     
 }
 
@@ -18,20 +20,37 @@ class App extends React.Component {
       data: dummyData
     })
 }
+
+onSearch=(searchTerm)=>{
+   let userNames = this.state.data.filter(userName =>{
+   return  userName.username.toLowerCase().includes(searchTerm.toLowerCase())}
+   );
+ 
+   this.setState({
+     filteredSearch: userNames
+   });
+  }
+  
   
 render() {
     return (
       <div>
         <div>
-          <SearchBar/>
+          <SearchBar  onSearch={this.onSearch} />
         </div>
 
         <div className="App">
-          <PostContainer/>
-        </div>
+          <PostContainer
+           data={
+            this.state.filteredSearch.length > 0
+                ? this.state.filteredSerach
+                : this.state.data
+        }
+
+    />
       </div>
-    );
-  }
+      </div>
+    );}
 }
 
 export default App;
