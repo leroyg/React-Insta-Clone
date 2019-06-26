@@ -1,0 +1,18 @@
+.comment-section {
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.comments {
+    text-align: left;
+    padding: 2px;
+    margin-left: 4px;
+  }
+  
+  .comments .h2 {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  

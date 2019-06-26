@@ -1,0 +1,35 @@
+.postContainer {
+    height: 500px;
+    width: 30%;
+    min-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-image-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .post-image {
+    width: 100%;
+  }
+  
+  .post-header {
+    display: flex;
+  }
+  
+  .post-thumbnail-container {
+    height: 50px;
+    width: 50px;
+  }
+  .post-thumbnail-image {
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  

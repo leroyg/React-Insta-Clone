@@ -1,0 +1,44 @@
+
+.searchBarMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #8080803d;
+    background: rgba(199, 199, 199, 0.1);
+    position: relative;
+}
+
+.searchBarComponentLeft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+div.searchBarComponentLeft img {
+    width: 5%;
+    border-right: 2px solid #8080803d;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+
+ .searchBarComponentLeft h1 {
+    font-family: "Pacifico", cursive;
+  }
+
+.searchBarComponentRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+
+.searchBarComponentRight i {
+    margin-right: 2%;
+    cursor: pointer;
+  }
